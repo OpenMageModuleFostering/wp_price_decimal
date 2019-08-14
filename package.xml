@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+  <name>wp_price_decimal</name>
+  <version>1.3.0</version>
+  <stability>stable</stability>
+  <license uri="http://www.opensource.org/licenses/academic.php">Academic Free License (AFL)</license>
+  <channel>community</channel>
+  <extends/>
+  <summary>Price Decimal (WebAndPeople.com)</summary>
+  <description>Price Decimal (WebAndPeople.com)</description>
+  <notes>~ conf. product price update</notes>
+  <authors>
+    <author>
+      <name>WebAndPeople</name>
+      <user>WebAndPeople</user>
+      <email>design@webandpeople.com</email>
+    </author>
+    <author>
+      <name>y.gerassimenko</name>
+      <user>ygerassimenko</user>
+      <email>y.gerassimenko@webandpeople.com</email>
+    </author>
+  </authors>
+  <date>2011-11-04</date>
+  <time>03:02:04</time>
+  <contents>
+    <target name="mageweb">
+      <dir name="app">
+        <dir name="code">
+          <dir name="community">
+            <dir name="WP">
+              <dir name="PriceDecimal">
+                <dir name="Block">
+                  <file name="About.php" hash="5c0719ff5bda0feb45cde267e28b3714"/>
+                </dir>
+                <dir name="Helper">
+                  <file name="Data.php" hash="aea28646aee55b7a21bb90c52df0b14d"/>
+                </dir>
+                <dir name="Model">
+                  <file name="Currency.php" hash="bae33697c942d87dc36ce1cc99a92813"/>
+                  <file name="Locale.php" hash="d66eb5e2e8b0fc14202f699d94b2c26e"/>
+                </dir>
+                <dir name="etc">
+                  <file name="config.xml" hash="0f18e516880b4a9f56c88414a3af0d9f"/>
+                  <file name="system.xml" hash="527c2e7bb956a0292ac23c497f9fd873"/>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir name="etc">
+          <dir name="modules">
+            <file name="WP_PriceDecimal.xml" hash="9b870760e423ab063bd152305552564c"/>
+          </dir>
+        </dir>
+      </dir>
+    </target>
+  </contents>
+  <compatible/>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.2.0</min>
+        <max>6.0.0</max>
+      </php>
+    </required>
+  </dependencies>
+</package>

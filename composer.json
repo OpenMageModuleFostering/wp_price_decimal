@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/wp_price_decimal",
+    "type": "magento-module",
+    "license": "Academic-Free-License-(AFL)",
+    "homepage": "",
+    "description": "Price Decimal (WebAndPeople.com)",
+    "authors": [
+    {
+        "name": "WebAndPeople",
+        "email": "design@webandpeople.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

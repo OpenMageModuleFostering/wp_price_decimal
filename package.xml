@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package>
   <name>wp_price_decimal</name>
-  <version>1.3.0</version>
+  <version>2.0.0</version>
   <stability>stable</stability>
-  <license uri="http://www.opensource.org/licenses/academic.php">Academic Free License (AFL)</license>
+  <license uri="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</license>
   <channel>community</channel>
   <extends/>
-  <summary>Price Decimal (WebAndPeople.com)</summary>
-  <description>Price Decimal (WebAndPeople.com)</description>
-  <notes>~ conf. product price update</notes>
+  <summary>Decimal price (Web-Experiment.Info)</summary>
+  <description>Decimal price (Web-Experiment.Info)</description>
+  <notes>+ param: Exclude product options, ~ code refactoring, ~ js round function</notes>
   <authors>
     <author>
       <name>WebAndPeople</name>
@@ -21,8 +21,8 @@
       <email>y.gerassimenko@webandpeople.com</email>
     </author>
   </authors>
-  <date>2011-11-04</date>
-  <time>03:02:04</time>
+  <date>2014-01-30</date>
+  <time>16:15:50</time>
   <contents>
     <target name="mageweb">
       <dir name="app">
@@ -31,18 +31,38 @@
             <dir name="WP">
               <dir name="PriceDecimal">
                 <dir name="Block">
-                  <file name="About.php" hash="5c0719ff5bda0feb45cde267e28b3714"/>
+                  <file name="About.php" hash="03a8828a30b85e9b84366de183d95426"/>
                 </dir>
                 <dir name="Helper">
-                  <file name="Data.php" hash="aea28646aee55b7a21bb90c52df0b14d"/>
+                  <file name="Data.php" hash="b14f842287cd4d2118ea5d8ae470b646"/>
                 </dir>
                 <dir name="Model">
-                  <file name="Currency.php" hash="bae33697c942d87dc36ce1cc99a92813"/>
+                  <file name="Currency.php" hash="90e0a2a555054ea5b6b3976b41e6818c"/>
                   <file name="Locale.php" hash="d66eb5e2e8b0fc14202f699d94b2c26e"/>
                 </dir>
                 <dir name="etc">
-                  <file name="config.xml" hash="0f18e516880b4a9f56c88414a3af0d9f"/>
-                  <file name="system.xml" hash="527c2e7bb956a0292ac23c497f9fd873"/>
+                  <file name="config.xml" hash="f595cf7a1b7a5de97cc697e20d7e4c86"/>
+                  <file name="system.xml" hash="83a8abe47bc0855bd10ec2d48395ed3d"/>
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir name="design">
+          <dir name="frontend">
+            <dir name="default">
+              <dir name="default">
+                <dir name="layout">
+                  <dir name="webandpeople">
+                    <file name="pricedecimal.xml" hash="c5f202ef04bf970a101e9ffe6a05e782"/>
+                  </dir>
+                </dir>
+                <dir name="template">
+                  <dir name="webandpeople">
+                    <dir name="pricedecimal">
+                      <file name="init.phtml" hash="50ac65b8f110bc740c7830e7526f149d"/>
+                    </dir>
+                  </dir>
                 </dir>
               </dir>
             </dir>
@@ -51,6 +71,13 @@
         <dir name="etc">
           <dir name="modules">
             <file name="WP_PriceDecimal.xml" hash="9b870760e423ab063bd152305552564c"/>
+          </dir>
+        </dir>
+      </dir>
+      <dir name="js">
+        <dir name="webandpeople">
+          <dir name="pricedecimal">
+            <file name="init.js" hash="30bbbd52a5b9a8f1a2f55207f27fa099"/>
           </dir>
         </dir>
       </dir>

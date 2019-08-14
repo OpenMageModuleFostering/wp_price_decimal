@@ -13,6 +13,7 @@ class WP_PriceDecimal_Model_Currency extends Mage_Directory_Model_Currency
     {
         $params = Mage::helper('pricedecimal')->getParams();
         if ($params['skeep']) return parent::format($price, $options, $includeContainer, $addBrackets);
-        return $this->formatPrecision($price, $params['precision'], $options, $includeContainer, $addBrackets);
+        $params['precision'] = Mage::helper('pricedecimal')->trimZeroRight($price, $params['precision']);
+        return $formatPrice = $this->formatPrecision($price, $params['precision'], $options, $includeContainer, $addBrackets);
     }
 }
